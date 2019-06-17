@@ -1,0 +1,26 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+    font-family: "Lato", sans-serif;
+}
+
+.container{
+    padding: 10px 10px 10px 10px;
+}
+
+.request{
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 223px;
+    overflow-x: hidden;
+    margin-left: 145px; /* 140 Same width as the sidebar + left position in px */
+    margin-right: 25px;
+    font-size: 20px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+    background: #c9bfbf;
+}
+
+@media screen and (max-height: 450px) {
+    .request {padding-top: 15px;}
+    .nav a {font-size: 18px;}
+}
