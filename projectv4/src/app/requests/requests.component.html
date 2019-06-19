@@ -1,0 +1,22 @@
+<!-- LIST OF REQUESTS -->
+<div class = "container_requests">
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Organization</th>
+                <th>Reason</th>
+                <th>Venue</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor= "let emp of list">
+                <td>{{emp.name}}</td>
+                <td>{{emp.org}}</td>
+                <td>{{emp.reason}}</td>
+                <td>{{emp.venue}}</td>
+                <td><a class= "btn text-danger"> <i class="fa fa-trash"></i></a></td>
+            </tr>
+        </tbody>
+    </table>
+</div>

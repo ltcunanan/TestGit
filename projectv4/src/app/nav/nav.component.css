@@ -1,0 +1,66 @@
+header{
+    padding: 30px;
+    text-align: center;
+    /* background: #9e1f09; */
+    background-image: url("slide3.jpg");
+    background-size: cover;
+    background-position: center;
+    margin-right: 8.5px;
+}
+
+header h1{
+    /* color: #990000; */
+    /* font-size: 50px; */
+
+    font-family: Georgia, sans-serif;
+    font-size: 50px;
+    letter-spacing: -2px;
+    color: #700101;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+
+}
+
+nav {
+    width: 130px;
+    position: fixed;
+    /*z-index: 1;*/
+    top: 223px;
+    left: 10px; /*10px*/
+    background: #333;
+    /*overflow-x: hidden;*/
+    padding: 8px 0;
+}
+  
+nav a {
+    padding: 6px 8px 6px 16px;
+    text-align: left;
+    text-decoration: none;
+    font-size: 23px;
+    color: #f1f1f1;
+    display: block;
+}
+
+nav a:hover{
+    color: #064579;
+}
+
+div.addButton{
+    background: white; 
+}
+
+div.addButton > button{
+    position: relative;
+    background-color: #4CAF50;
+    border: none;
+    font-size: 10px;
+    color: #FFFFFF;
+    padding: 10px;
+    width: 130px;
+    text-align: left;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+}
+
