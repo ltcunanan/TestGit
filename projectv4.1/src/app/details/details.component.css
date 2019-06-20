@@ -1,0 +1,13 @@
+.details-container{
+    height: 72%;
+    width: 1039px;
+    position: fixed;
+    z-index: 1;
+    top: 223px;
+    overflow-x: hidden;
+    margin-left: 145px; /* 140 Same width as the sidebar + left position in px */
+    margin-right: 25px;
+    font-size: 20px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+    /* background: #c9bfbf; */
+}

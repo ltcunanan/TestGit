@@ -1,0 +1,19 @@
+<!-- LIST OF REQUESTS -->
+<div class = "container_requests">
+    <table>
+        <thead>
+            <th>Name</th>
+            <th>Organization</th>
+            <th>Reason</th>
+            <th>Venue</th>
+        </thead>
+        <tbody>
+            <tr *ngFor= "let emp of list"><a [routerLink]="['/details',emp.key]">
+                <td>{{emp.name}}</td>
+                <td>{{emp.org}}</td>
+                <td>{{emp.reason}}</td>
+                <td>{{emp.venue}}</td>
+            </a></tr>
+        </tbody>
+    </table>
+</div>
