@@ -1,0 +1,22 @@
+<div class="details-container">
+  <div class = "details-header">
+      <div class = "hd"> RESERVATION DETAILS </div>
+      <div class ="details-header-right">
+        <button class = "button edit-but" [routerLink]="['/editrequest',requestId]">Edit</button>
+        <button class = "button cancel-but">Cancel</button>
+      </div> 
+  </div>
+
+  <div class= "details-body">
+    <ul class="list group">
+      <li class="list-group-item">Name: {{listing.name}}</li>
+      <hr>
+      <li class="list-group-item">Org: {{listing.org}}</li>
+      <hr>
+      <li class="list-group-item">Venue: {{listing.venue}}</li>
+      <hr>
+      <li class="list-group-item">Reason: {{listing.reason}}</li>
+      <hr>
+    </ul>
+  </div>
+</div>
