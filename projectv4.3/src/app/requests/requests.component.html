@@ -1,0 +1,26 @@
+<!-- LIST OF REQUESTS -->
+<div class = "container_requests">
+    <table>
+        <thead>
+            <th>Status</th>
+            <!-- <th></th> -->
+            <th>Name</th>
+            <th>Organization</th>
+            <th>Venue</th>
+            <th>Reason</th>
+        </thead>
+        <tbody>
+            <div class = "pagination">
+                <tr  *ngFor= "let emp of list | paginate: { itemsPerPage: 15, currentPage: p }; let i = index" (click) = "goTo(emp.id)">
+                    <!-- <td><span class="dot" background-color = "emp.status"></span></td> -->
+                    <td><strong>{{emp.status}}</strong></td>
+                    <td>{{emp.name}}</td>
+                    <td>{{emp.org}}</td>
+                    <td>{{emp.venue}}</td>
+                    <td class = "ellipsis">{{emp.reason}}</td>
+                </tr>
+            </div>
+        </tbody>
+    </table>
+    <pagination-controls (pageChange)="p = $event"></pagination-controls>
+</div>

@@ -1,0 +1,96 @@
+a {
+	margin: 0px;
+	transition: all 0.4s;
+	-webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+}
+/*
+.red {color:red}
+.grey {color: grey}
+.yellow {color:yellow}
+.green {color: green}
+*/
+.ellipsis {
+    max-width: 30px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+/* ------------------------------------------------------------------------ */
+.container_requests {
+    height: 100%;
+    width: 86%; /*to fix for full and small screen*/
+    /* width: 1000px; */
+    position: fixed;
+    z-index: 1;
+    top: 223px;
+    overflow-x: hidden;
+    margin-left: 145px;
+    background: #fff;
+
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    padding: 4px;
+    /* height: 100%; */
+    position: relative;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+td, th{
+    padding: 9px;
+    text-align: left;
+    margin: 0;
+}
+
+tr{
+    border-bottom: 1px solid #000;
+}
+
+tbody tr:hover{
+    background-color: #eee;
+}
+
+tbody tr a{
+    text-decoration: none;
+    color: #000;
+}
+
+th {
+    position: sticky;
+    top: 0;
+    background-color: #333;
+    color: white;
+    font-size: 18px;
+}
+
+.pagination {
+    display: inline-block;
+}
+  
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+}
+  
+.pagination a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+  
+.pagination a:hover:not(.active) {background-color: #ddd;}
